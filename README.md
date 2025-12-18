@@ -1,2 +1,2 @@
-# unity-pooling-system
-Object pooling system for Unity
+# Pooling System
+Object pooling system for Unity.
