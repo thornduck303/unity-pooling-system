@@ -26,17 +26,6 @@ namespace ThornDuck.PoolingSystem
         private static int instanceCount;
         private static Transform rootContainer;
 
-#if UNITY_EDITOR
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-        private static void OnPlayMode()
-        {
-            pools.Clear();
-            countPerInstance.Clear();
-            instanceCount = 0;
-            rootContainer = null;
-        }
-#endif
-
         /// <summary>
         /// Gets the root <see cref="Transform"/> used to organize pooled objects in the hierarchy.
         /// </summary>
