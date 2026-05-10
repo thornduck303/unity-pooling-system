@@ -69,7 +69,7 @@ public class Gun : MonoBehaviour
     );
 
     if (bullet == null)
-        return;
+      return;
   }
 }
 ```
