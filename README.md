@@ -6,7 +6,7 @@ Instead of constantly creating and destroying **GameObjects**, this system reuse
 ## How to use
 
 ### 1. Create a Poolable Prefab
-Attach ```PoolableObject`` to your prefab.
+Attach ```PoolableObject``` to your prefab.
 
 ```csharp
 using ThornDuck.PoolingSystem;
