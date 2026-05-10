@@ -79,15 +79,4 @@ Never use ```Destroy()``` on pooled instances directly, use ```PoolingSystem.Ret
 However, if a pooled object is destroyed manually, the system automatically deregisters it safely.
 
 The system includes built-in **safety limits** (max number of pools, max number of instances and max instances per prefab).
-If limits are exceeded, the **oldest unused pool** is automatically **removed** and instance creation safely fails with debug warnings.
-
-When an object is retrieved:
-- Position and rotation are applied
-- Object is detached from the pool container
-- ```OnRetrieveFromPool``` is invoked
-- **GameObject** is activated
-
-When returned:
-- **GameObject** is disabled
-- Object is parented back into its pool
-- Instance is stored for reuse
+If limits are exceeded, the **oldest unused pool** is automatically **removed** and instance creation safely fails.
