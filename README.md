@@ -51,7 +51,7 @@ PoolingSystem.ReturnInstance(bullet);
 
 The object becomes inactive and is reused later.
 
-### Example
+## Example
 ```csharp
 public class Gun : MonoBehaviour
 {
